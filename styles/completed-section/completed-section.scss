@@ -1,0 +1,99 @@
+@import "../scss-variables/variables.scss";
+
+.completedSection {
+  display: none;
+
+  .completed-tasks {
+    border: map-get($border, border);
+    border-radius: map-get($border-radius, border-radius);
+    width: 90%;
+    background-color: rgb(145, 243, 243);
+
+    .completed-tasks-list {
+      overflow: auto;
+      height: 380px;
+      padding: 0 0 10px 0;
+      margin: 0;
+
+      div {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        li {
+          width: 90%;
+          border-bottom: 2px solid $primary-color;
+          font-weight: 700;
+          list-style: none;
+          word-break: break-all;
+          color: $primary-color;
+        }
+      }
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 2px solid $primary-color;
+
+      .searchInput {
+        padding: 10px;
+      }
+
+      h2 {
+        margin-left: 1em;
+      }
+
+      .onCloseBtn {
+        margin-right: 1em;
+        border: map-get($border, border);
+        border-radius: 5px;
+        font-weight: 700;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        cursor: pointer;
+        background-color: rgb(255, 0, 0);
+
+        &:hover {
+          box-shadow: map-get($darkShadow-hover, box-shadow);
+        }
+      }
+    }
+  }
+}
+
+.completedSectionAfter {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-top: 1em;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .completedSection {
+    .completed-tasks {
+      height: 550px;
+
+      .container {
+        h2 {
+          font-size: 20px;
+        }
+
+        .searchInput {
+          width: 20%;
+        }
+      }
+
+      .completed-tasks-list {
+        height: 470px;
+      }
+    }
+  }
+}

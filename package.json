@@ -1,0 +1,18 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ToDoItem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./styles/index.scss ./styles/index.css",
+    "watch-scss": "sass --watch ./styles/index.scss:./styles/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.5",
+    "sass": "^1.69.5"
+  }
+}

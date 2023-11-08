@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/results-section/results-section.css"
+    />
+    <link rel="stylesheet" href="./styles/form/form.css" />
+    <link rel="stylesheet" href="./styles/feedback-msg/feedback-msg.css" />
+    <link rel="stylesheet" href="./styles/error-msg/error-msg.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/completed-section/completed-section.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>To Do App</h1>
+      <a class="completedBtn">Completed to-dos</a>
+    </header>
+    <div class="feedbackDiv"></div>
+    <section class="completedSection">
+      <div class="completed-tasks">
+        <div class="container">
+          <h2>Completed Tasks</h2>
+          <input type="text" class="searchInput" placeholder="Search To-Dos" />
+          <button class="onCloseBtn">X</button>
+        </div>
+        <ul class="completed-tasks-list"></ul>
+      </div>
+    </section>
+    <section class="mainSection">
+      <form class="form">
+        <div>
+          <p>Enter your to-do</p>
+          <div><input class="text-input" type="text" required /></div>
+        </div>
+        <div>
+          <p>Enter time to completion</p>
+          <div class="timeInputsContainer">
+            <label for="hour-input">Hours:</label>
+            <input class="hour-input" type="number" min="0" max="99" required />
+            <label for="minutes-input">Minutes:</label>
+            <input
+              class="minutes-input"
+              type="number"
+              min="0"
+              max="59"
+              required
+            />
+            <button class="btn">Add</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <div class="resultsSection">
+      <section class="results-container">
+        <ul class="toDoList"></ul>
+      </section>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

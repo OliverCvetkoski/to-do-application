@@ -1,0 +1,39 @@
+input {
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+input:hover {
+  box-shadow: 0px 0px 10px 3px #000000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(79, 220, 239) 20%, rgb(157, 249, 239) 36%, rgb(237, 247, 246) 58%, rgb(255, 168, 182) 80%, rgb(162, 128, 137) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input:hover {
+  box-shadow: 0px 0px 10px 3px #000000;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(8, 189, 189);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(5, 201, 201);
+}
+
+/*# sourceMappingURL=index.css.map */

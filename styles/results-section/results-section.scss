@@ -1,0 +1,71 @@
+@import "../scss-variables/variables.scss";
+
+.resultsSection {
+  display: flex;
+  justify-content: center;
+
+  .results-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 1em 0 2em;
+    border-radius: map-get($border-radius, border-radius);
+
+    .toDoList {
+      width: 95%;
+      padding: 0;
+      .timer {
+        font-weight: 600;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        width: fit-content;
+      }
+
+      li {
+        border-bottom: 2px solid $primary-color;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        font-weight: 700;
+        word-break: break-all;
+        margin-top: 10px;
+        color: $primary-color;
+      }
+
+      .buttonsDiv {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5px;
+        width: fit-content;
+        gap: 5px;
+
+        .delete-btn {
+          @extend %button-style;
+          background-color: rgb(255, 34, 34);
+
+          &:hover {
+            box-shadow: map-get($darkShadow-hover, box-shadow);
+          }
+        }
+
+        .complete-btn {
+          @extend %button-style;
+          background-color: rgb(6, 233, 6);
+
+          &:hover {
+            box-shadow: map-get($darkShadow-hover, box-shadow);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .resultsSection {
+    .results-container {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import "../scss-variables/variables.scss";
+
+.mainSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 4em;
+
+    p,
+    label {
+      font-weight: 600;
+    }
+
+    .text-input {
+      padding: 10px;
+    }
+
+    .btn {
+      border: map-get($border, border);
+      border-radius: map-get($border-radius, border-radius);
+      padding: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.192);
+
+      &:hover {
+        box-shadow: map-get($darkShadow-hover, box-shadow);
+      }
+    }
+
+    .timeInputsContainer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 10px;
+
+      .hour-input {
+        padding: 10px;
+      }
+
+      .minutes-input {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainSection {
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      .btn {
+        padding: 5px;
+      }
+
+      .timeInputsContainer {
+        gap: 5px;
+        justify-content: center;
+
+        .hour-input {
+          padding: 5px;
+        }
+
+        .minutes-input {
+          padding: 5px;
+        }
+      }
+
+      div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p,
+        div {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      div:nth-child(2) p {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

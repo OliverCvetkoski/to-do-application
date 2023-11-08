@@ -1,0 +1,71 @@
+.resultsSection .results-container .toDoList .buttonsDiv .complete-btn, .resultsSection .results-container .toDoList .buttonsDiv .delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 25px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.resultsSection {
+  display: flex;
+  justify-content: center;
+}
+.resultsSection .results-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 1em 0 2em;
+  border-radius: 10px;
+}
+.resultsSection .results-container .toDoList {
+  width: 95%;
+  padding: 0;
+}
+.resultsSection .results-container .toDoList .timer {
+  font-weight: 600;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+.resultsSection .results-container .toDoList li {
+  border-bottom: 2px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  font-weight: 700;
+  word-break: break-all;
+  margin-top: 10px;
+  color: #000000;
+}
+.resultsSection .results-container .toDoList .buttonsDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+  width: fit-content;
+  gap: 5px;
+}
+.resultsSection .results-container .toDoList .buttonsDiv .delete-btn {
+  background-color: rgb(255, 34, 34);
+}
+.resultsSection .results-container .toDoList .buttonsDiv .delete-btn:hover {
+  box-shadow: 0px 0px 10px 3px #000000;
+}
+.resultsSection .results-container .toDoList .buttonsDiv .complete-btn {
+  background-color: rgb(6, 233, 6);
+}
+.resultsSection .results-container .toDoList .buttonsDiv .complete-btn:hover {
+  box-shadow: 0px 0px 10px 3px #000000;
+}
+
+@media (max-width: 768px) {
+  .resultsSection .results-container {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=results-section.css.map */

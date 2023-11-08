@@ -1,0 +1,26 @@
+@import "../scss-variables/variables.scss";
+
+.errorMsg {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 52%;
+  top: 33%;
+  width: 200px;
+  background-color: rgb(255, 0, 0);
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border: map-get($border, border);
+  border-radius: map-get($border-radius, border-radius);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  .errorMsg {
+    top: 35%;
+    transform: translate(-53%, 50%);
+  }
+}

@@ -1,0 +1,30 @@
+@import "../scss-variables/variables.scss";
+
+header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $primary-color;
+
+  h1 {
+    margin-left: 1em;
+  }
+
+  .completedBtn {
+    margin-right: 2em;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: map-get($border, border);
+    border-radius: map-get($border-radius, border-radius);
+    cursor: pointer;
+    background-color: #2d88949d;
+    font-weight: 700;
+
+    &:hover {
+      box-shadow: map-get($darkShadow-hover, box-shadow);
+    }
+  }
+}

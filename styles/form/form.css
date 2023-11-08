@@ -1,0 +1,78 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.mainSection .form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 4em;
+}
+.mainSection .form p,
+.mainSection .form label {
+  font-weight: 600;
+}
+.mainSection .form .text-input {
+  padding: 10px;
+}
+.mainSection .form .btn {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+.mainSection .form .btn:hover {
+  box-shadow: 0px 0px 10px 3px #000000;
+}
+.mainSection .form .timeInputsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.mainSection .form .timeInputsContainer .hour-input {
+  padding: 10px;
+}
+.mainSection .form .timeInputsContainer .minutes-input {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .mainSection .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .mainSection .form .btn {
+    padding: 5px;
+  }
+  .mainSection .form .timeInputsContainer {
+    gap: 5px;
+    justify-content: center;
+  }
+  .mainSection .form .timeInputsContainer .hour-input {
+    padding: 5px;
+  }
+  .mainSection .form .timeInputsContainer .minutes-input {
+    padding: 5px;
+  }
+  .mainSection .form div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainSection .form div:nth-child(1) p,
+  .mainSection .form div:nth-child(1) div {
+    display: flex;
+    justify-content: center;
+  }
+  .mainSection .form div:nth-child(2) p {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #000000;
+}
+header h1 {
+  margin-left: 1em;
+}
+header .completedBtn {
+  margin-right: 2em;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(45, 136, 148, 0.6156862745);
+  font-weight: 700;
+}
+header .completedBtn:hover {
+  box-shadow: 0px 0px 10px 3px #000000;
+}
+
+/*# sourceMappingURL=header.css.map */
